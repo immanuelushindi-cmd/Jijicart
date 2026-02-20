@@ -6,12 +6,27 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+
+    
 </head>
 <body>
 
 <h1>Available Products!!</h1>
+    <a href="{% url 'index' %}">Visit Home</a>
+    <a href="{% url 'services' %}">Visit Our Services</a>
 
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam debitis error excepturi fugit laborum magnam, modi odit recusandae sed sit soluta, tempore vel velit veritatis voluptatem? Cupiditate odit perferendis quisquam?</span><span>A accusamus architecto blanditiis cupiditate dolor dolorum eligendi esse est expedita fugiat id inventore itaque labore libero molestias mollitia, obcaecati perferendis quae rem, repellendus repudiandae, sit soluta unde veniam voluptate!</span><span>Accusantium autem blanditiis consectetur culpa dolores, eos facere nesciunt perferendis quasi recusandae rem tempora ut. Accusantium aliquid, aperiam, deserunt doloribus laboriosam minima nesciunt, nihil omnis tempora tenetur vel vero? Totam.</span></p>
 
+<img src="{% static 'assets/car1.jpeg' %}" alt="">
+<img src="{% static 'assets/car2.jpeg' %}" alt="">
+<img src="{% static 'assets/car3.jpeg' %}" alt="">
+<img src="{% static 'assets/car4.jpeg' %}" alt="">
+<img src="{% static 'assets/car5.jpeg' %}" alt="">
+<img src="{% static 'assets/car6.jpeg' %}" alt="">
+<img src="{% static 'assets/car7.jpeg' %}" alt="">
+<img src="{% static 'assets/car8.jpeg' %}" alt="">
+<img src="{% static 'assets/car9.jpeg' %}" alt="">
 </body>
 </html>
